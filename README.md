@@ -26,4 +26,15 @@ $ npm test
 
 ## API
 
+### strip
+#### strips white space characters - except for spaces
 
+```javascript
+ /**
+  * @name strip
+  * @summary strips white space characters - except for spaces
+  * @param {string} str - string to strip characters from
+  * @return {string} string - without white space characters
+  */
+  static strip(str)
+```
