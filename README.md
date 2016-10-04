@@ -229,23 +229,25 @@ $ npm test
   static getRandomArbitrary(min, max)
 ```
 
-### 
+### getRandomInt - Returns a random integer between min (included) and max (excluded)
 
 ```javascript
+  /**
+  * @name getRandomInt
+  * @summary Returns a random integer between min (included) and max (excluded)
+  * @return {number} num - number
+  */
+  static getRandomInt(min, max)
 ```
 
-### 
+### getRandomIntInclusive - Returns a random integer between min (included) and max (included)
 
 ```javascript
-```
-
-### 
-
-```javascript
-```
-
-### 
-
-```javascript
+  /**
+  * @name getRandomIntInclusive
+  * @summary Returns a random integer between min (included) and max (included)
+  * @return {number} num - number
+  */
+  static getRandomIntInclusive(min, max)
 ```
 
