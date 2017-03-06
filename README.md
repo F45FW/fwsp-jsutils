@@ -38,7 +38,7 @@ $ npm test
   static strip(str)
 ```
 
-### zeroPad - add preceeding zeros to maintain desired places 
+### zeroPad - add preceeding zeros to maintain desired places
 
 ```javascript
   /**
@@ -65,7 +65,7 @@ $ npm test
   static stringHash(str)
 ```  
 
-### shortID - generate a random id composed of alphanumeric characters 
+### shortID - generate a random id composed of alphanumeric characters
 
 ```javascript
   /**
@@ -100,7 +100,7 @@ $ npm test
   static isObject(obj)
 ```
 
-### isArray - Determines whether a variable is an array 
+### isArray - Determines whether a variable is an array
 
 ```javascript
   /**
@@ -115,15 +115,14 @@ $ npm test
 ### safeJSONStringify - Safe JSON stringify
 
 ```javascript
-  /**
-   * @name safeJSONStringify
-   * @summary Safe JSON stringify
-   * @description Note, that this function if very different from the
-   *  JSON.stringify function in that it won't accept non objects.
-   * @param {object} obj - object to stringify
-   * @return {string} string - stringified object.
-   *   Returns undefined if the object isn't a valid object or can't be stringified
-   */
+/**
+ * @name safeJSONParse
+ * @summary Safe JSON parse
+ * @private
+ * @param {string} str - string which will be parsed
+ * @return {object} obj - parsed object
+ *   Returns undefined if string can't be parsed into an object
+ */
   static safeJSONStringify(obj)
 ```
 
@@ -178,7 +177,7 @@ $ npm test
   static htmlDecode(text)
 ```
 
-### md5Hash - Hashes a key to produce an MD5 hash 
+### md5Hash - Hashes a key to produce an MD5 hash
 
 ```javascript
   /**
@@ -250,4 +249,3 @@ $ npm test
   */
   static getRandomIntInclusive(min, max)
 ```
-

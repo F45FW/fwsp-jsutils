@@ -1,8 +1,8 @@
 {
   "name": "fwsp-jsutils",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "JavaScript Utils - useful dev utils",
-	"author": {
+  "author": {
     "name": "Carlos Justiniano",
     "email": "carlos.justiniano@gmail.com"
   },
@@ -17,21 +17,22 @@
     "url": "git+https://github.com/flywheelsports/fwsp-jsutils.git"
   },
   "homepage": "https://github.com/flywheelsports/fwsp-jsutils",
-	"scripts": {
+  "scripts": {
     "test": "mocha specs --reporter spec"
-	},
+  },
   "engines": {
     "node": ">=6.2.1"
   },
   "main": "index.js",
   "dependencies": {
+    "json-stringify-safe": "5.0.1"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "eslint": "^1.9.0",
-    "jscs": "^2.5.1",
-    "jscs-jsdoc": "^1.2.0",
-    "mocha": "^2.4.5"
+    "chai": "3.5.0",
+    "eslint": "1.9.0",
+    "jscs": "2.5.1",
+    "jscs-jsdoc": "1.2.0",
+    "mocha": "2.4.5"
   },
   "bin": {
     "fwsp-jsutils": "index.js"

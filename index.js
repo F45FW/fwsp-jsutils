@@ -1,6 +1,7 @@
 'use strict';
 
 const crypto = require('crypto');
+const jss = require('json-stringify-safe');
 
 class Utils {
   /**
@@ -109,11 +110,7 @@ class Utils {
    *   Returns undefined if the object isn't a valid object or can't be stringified
    */
   static safeJSONStringify(obj) {
-    let data;
-    if ((typeof obj === 'object' && Object.prototype.toString.call(obj) !== '[object Array]')) {
-      data = JSON.stringify(obj);
-    }
-    return data;
+    return jss(obj);
   }
 
   /**
