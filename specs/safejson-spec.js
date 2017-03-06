@@ -33,8 +33,12 @@ describe('Safe JSON Stringify util', () => {
     let str = Utils.safeJSONStringify(obj);
     expect(str).to.be.equal('{"a":12,"b":34,"name":"carlos"}');
   });
-  it('should return undefined when trying to stringify an invalid object', () => {
+  it('should return 34 when trying to stringify a number', () => {
     let str = Utils.safeJSONStringify(34);
-    expect(str).to.be.undefined;
+    expect(str).to.be.equal('34');
+  });
+  it('should return empty array when trying to stringify an undefined', () => {
+    let str = Utils.safeJSONStringify();
+    expect(str).to.equal(undefined);
   });
 });
