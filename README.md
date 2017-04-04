@@ -88,6 +88,18 @@ $ npm test
   static UUID()
 ```
 
+### UUID - Test
+
+```javascript
+  /**
+  * @name isUUID4
+  * @summary determine whether a string is a valid UUID
+  * @param {string} str - possible UUID
+  * @return {undefined}
+  */
+  static isUUID(str)
+```
+
 ### isObject - Determines whether a variable is an object
 
 ```javascript

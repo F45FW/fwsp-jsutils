@@ -81,6 +81,17 @@ class Utils {
   }
 
   /**
+  * @name isUUID4
+  * @summary determine whether a string is a valid UUID
+  * @param {string} str - possible UUID
+  * @return {undefined}
+  */
+  static isUUID4(str) {
+    const uuidPattern = '^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$';
+    return (new RegExp(uuidPattern)).test(str);
+  }
+
+  /**
   * @name isObject
   * @summary Determines whether a variable is an object
   * @param {object} obj - variable being tested
